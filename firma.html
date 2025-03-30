@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUX AUTO - Учебно-тренировъчна фирма</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+
+        .navbar {
+            background-color: #003366;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li { margin: 0 20px; }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover { color: #ffcc00; }
+
+        section { padding: 60px 20px; text-align: center; }
+
+        #about h2 { font-size: 2.2em; margin-bottom: 30px; color: #003366; }
+        .content { max-width: 800px; margin: auto; line-height: 1.6; color: #333; }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .embedded-site {
+            width: 90%;
+            height: 500px;
+            margin: 20px auto;
+            border: 2px solid #003366;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="nachalna.html">Начало</a></li>
+            <li><a href="#services">Учебно-тренировъчните фирми в България</a></li>
+            <li><a href="#contact">Организационно - управленска структура</a></li>
+			            <li><a href="#about">Галерия</a></li>
+            <li><a href="#catalog">Каталог и Рекламни материали</a></li>
+            <li><a href="#more">ОЩЕ</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+      
+    </section>
+
+    <section id="about">
+        <h2>Учебно-тренировъчните фирми в България</h2>
+        <div class="content">
+            <p>Учебното предприятие/учебно-тренировъчна фирми/тренировъчна фирма е иновативна среда за обучение по предприемачество и бизнес администрация.В учебното предприятие се придобиват професионални и технически умения, както и така наречените "меки умения" за работа в екип, успешна комуникация, управление на времето и др. Чрез метода "учене чрез правене" УП дава възможност за приложение и усъвършенстване на езикови и дигитални компетенции. В мотивиращата среда на УП ученето е като роля и игра, то е иновативно, креативно и полезно за всеки.</p>
+        </div>
+        <iframe class="embedded-site" src="https://buct.org/%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B0-%D0%BC%D1%80%D0%B5%D0%B6%D0%B0"></iframe>
+        <div class="image-gallery">
+            <img src="firma2.jpeg" alt="Лукс Ауто изображение 1">
+            <img src="firma1.jpeg" alt="Лукс Ауто изображение 2">
+            <img src="firma3.jpeg" alt="Лукс Ауто изображение 3">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Този сайт е изработен от ученици от Професионална гимназия по търговия и ресторантьорство във връзка с дейността на Учебно предприятие “Лукс ауто”ООД Враца.</p>
+    </footer>
+
+</body>
+</html>
+

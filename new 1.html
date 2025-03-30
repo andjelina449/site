@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Организационно-управленска структура</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+
+        .navbar {
+            background-color: #003366;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li { margin: 0 20px; }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover { color: #ffcc00; }
+
+        .content {
+            margin-top: 100px; /* Добавяме пространство, за да не се припокрива с навигационната лента */
+            text-align: center;
+        }
+
+        .heading {
+          font-size: 2.2em;
+		  margin-bottom: 30px; color: #003366;
+        }
+
+        .image-container {
+            width: 100%;
+            max-width: 628px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 732px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+           <li><a href="nachalna.html">Начало</a></li>
+            <li><a href="#services">Учебно-тренировъчните фирми в България</a></li>
+            <li><a href="#contact">Организационно - управленска структура</a></li>
+			            <li><a href="#about">Галерия</a></li>
+            <li><a href="#catalog">Каталог и Рекламни материали</a></li>
+            <li><a href="#more">ОЩЕ</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <div class="heading">Организационно-управленска структура</div>
+        <div class="image-container">
+            <img src="OUS.png" alt="ОУС изображение">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Този сайт е изработен от ученици от Професионална гимназия по търговия и ресторантьорство във връзка с дейността на Учебно предприятие “Лукс ауто”ООД Враца.</p>
+    </footer>
+
+</body>
+</html>

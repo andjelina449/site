@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерия</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+
+        .navbar {
+            background-color: #003366;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li { margin: 0 20px; }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover { color: #ffcc00; }
+
+        .video-section, .image-gallery {
+            margin-top: 100px; /* Пространство за навигационната лента */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .video-slot {
+            width: 22%;
+            margin: 10px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        .video-slot iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        .image-gallery img {
+            width: 30%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .image-gallery div {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+             <li><a href="nachalna.html">Начало</a></li>
+            <li><a href="#services">Учебно-тренировъчните фирми в България</a></li>
+            <li><a href="#contact">Организационно - управленска структура</a></li>
+			            <li><a href="#about">Галерия</a></li>
+            <li><a href="#catalog">Каталог и Рекламни материали</a></li>
+            <li><a href="#more">ОЩЕ</a></li>
+        </ul>
+    </nav>
+
+    <section class="video-section" id="gallery">
+        <h2>Видео Галерия</h2>
+        <div class="video-slot">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/8aHZ09JQ2eg?si=MemEZirXth4lkARB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-slot">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/v5__M4n4Brc?si=cbuHfzJBcw0_GyLy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-slot">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u6L0Lh6PyqU?si=OAK9dmZzibOXC70M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-slot">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/ZsteFC2Z_Vo?si=nijQNyO-S-C8fqIl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-slot">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jIH47aXlv-0?si=40vV0PwqpfdbfTKC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-slot">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MUGVrb__m9g?si=7RyabFDZMxwXd6Ha" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-slot">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tgsK5bH-PSo?si=w8NY7evJsq_GpXAG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-slot">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZtJGBQiMOIY?si=Jmspi88u_utk_m94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="image-gallery">
+        <h2>Снимки</h2>
+        <div>
+            <img src="image1.jpg" alt="Снимка 1">
+            <p>Описание на снимка 1</p>
+        </div>
+        <div>
+            <img src="image2.png"        >
+            <p>Описание на снимка 2</p>
+        </div>
+        <div>
+            <img src="image3.jpg" alt="Снимка 3">
+            <p>Описание на снимка 3</p>
+        </div>
+        <div>
+            <img src="image4.jpg" alt="Снимка 4">
+            <p>Описание на снимка 4</p>
+        </div>
+        <div>
+            <img src="image5.jpg" alt="Снимка 5">
+            <p>Описание на снимка 5</p>
+        </div>
+        <div>
+            <img src="image6.jpg" alt="Снимка 6">
+            <p>Описание на снимка 6</p>
+        </div>
+        <div>
+            <img src="image7.jpg" alt="Снимка 7">
+            <p>Описание на снимка 7</p>
+        </div>
+        <div>
+            <img src="image8.jpg" alt="Снимка 8">
+            <p>Описание на снимка 8</p>
+        </div>
+        <div>
+            <img src="image9.jpg" alt="Снимка 9">
+            <p>Описание на снимка 9</p>
+        </div>
+        <div>
+            <img src="image10.jpg" alt="Снимка 10">
+            <p>Описание на снимка 10</p>
+        </div>
+        <div>
+            <img src="image11.jpg" alt="Снимка 11">
+            <p>Описание на снимка 11</p>
+        </div>
+        <div>
+            <img src="image12.jpg" alt="Снимка 12">
+            <p>Описание на снимка 12</p>
+        </div>
+        <div>
+            <img src="image13.jpg" alt="Снимка 13">
+            <p>Описание на снимка 13</p>
+        </div>
+        <div>
+            <img src="image14.jpg" alt="Снимка 14">
+            <p>Описание на снимка 14</p>
+        </div>
+        <div>
+            <img src="image15.jpg" alt="Снимка 15">
+            <p>Описание на снимка 15</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Този сайт е изработен от ученици от Професионална гимназия по търговия и ресторантьорство във връзка с дейността на Учебно предприятие “Лукс ауто”ООД Враца.</p>
+    </footer>
+
+</body>
+</html>
